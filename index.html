@@ -1,0 +1,133 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Dev Detective</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+
+  <div class="container">
+
+    <!-- TITLE -->
+
+    <h1 class="title">
+
+      <span class="logo">
+        🕵️
+      </span>
+
+      DevDetective
+
+    </h1>
+
+    <!-- MODE BUTTONS -->
+
+    <div class="mode-buttons">
+
+      <button
+        id="singleModeBtn"
+        class="active"
+      >
+        Single Search
+      </button>
+
+      <button id="battleModeBtn">
+        Battle Mode
+      </button>
+
+    </div>
+
+    <!-- SINGLE SEARCH -->
+
+    <div id="singleSearch">
+
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search GitHub Username..."
+        />
+
+        <button id="searchBtn">
+          Search
+        </button>
+
+      </div>
+
+      <div
+        id="loading"
+        class="hidden"
+      ></div>
+
+      <div
+        id="error"
+        class="hidden"
+      ></div>
+
+      <div id="profileContainer"></div>
+
+      <div id="repoContainer"></div>
+
+    </div>
+
+    <!-- BATTLE MODE -->
+
+    <div
+      id="battleSection"
+      class="hidden"
+    >
+
+      <div class="battle-inputs">
+
+        <input
+          type="text"
+          id="player1"
+          placeholder="Player 1 Username"
+        />
+
+        <input
+          type="text"
+          id="player2"
+          placeholder="Player 2 Username"
+        />
+
+      </div>
+
+      <button id="battleBtn">
+        Start Battle
+      </button>
+
+      <div id="battleResult"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
